@@ -48,7 +48,7 @@ button:active {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-img:hover {
+.xoay:hover {
     transform: rotate(-180deg);
     transition: all 0.5s;
 }
