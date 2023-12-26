@@ -1,0 +1,3 @@
+- git add .
+- git commit -m "scada project example"
+- git push origin master
