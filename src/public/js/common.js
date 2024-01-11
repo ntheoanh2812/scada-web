@@ -1,4 +1,3 @@
-//import SCADA from '../../libs/scada.min.js';
 // config SCADA
 const scd = new SCADA();
 scd.src = './src/public/img/symbol/';
@@ -19,7 +18,7 @@ setInterval(() => {
     data['vanxa'] = data['run'] && data['cambien'] && !t1.q;
     t1.run(data['run'] && data['cambien']);
     scd.read(data);
-    scd.onSymbolStatus('van', 'valve', 'vanxa'); // id , name , tag
+    scd.onSymbolStatus('van', 'valve', 'vanxa'); // id , img_name , tag
     scd.onSymbolStatus('bangtai', 'bangtai', 'bangtai'); // id , name , tag
     if (data['bangtai']){
         data['vitri'] += 3;
